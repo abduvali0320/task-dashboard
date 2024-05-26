@@ -5,7 +5,7 @@ import { IoIosNotificationsOutline } from 'react-icons/io'
 import profile_img from '../assets/img/profile-img.png'
 export default function Navbar() {
   return (
-    <div className='d-flex justify_betwen align_center' >
+    <div className='d-flex justify_betwen align_center ' >
       <div className='input_search align_center d-flex' >
         <button>
           <CiSearch />

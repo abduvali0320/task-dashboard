@@ -86,7 +86,7 @@ export default function Chart_line() {
     },
   };
   return (
-    <div >
+    <div className='bg_white' >
       <div id="chart">
         <ReactApexChart options={state.options} series={state.series} type="line" height={250} />
       </div>
