@@ -507,3 +507,22 @@ li a:active {
     }
 }
 /* chart one styles */
+/* .chart {
+    height: 250px !important;
+} */
+/* media */
+@media screen and (max-width: 1140px) {
+    .circle_chart .bg_white {
+        flex-direction: column;
+        padding: 0;
+    }
+    .description_chart_circle {
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 30px;
+    }
+}
+/* media */

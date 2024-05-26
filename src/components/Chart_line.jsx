@@ -55,7 +55,6 @@ export default function Chart_line() {
     }],
     options: {
       chart: {
-        height: 150,
         type: 'line',
         zoom: {
           enabled: false
@@ -88,7 +87,7 @@ export default function Chart_line() {
   return (
     <div className='bg_white' >
       <div id="chart">
-        <ReactApexChart options={state.options} series={state.series} type="line" height={250} />
+        <ReactApexChart className='chart' options={state.options} series={state.series} type="line"  height={'170%'} />
       </div>
       <div id="html-dist"></div>
     </div >
