@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { memo } from 'react'
 
-export default function Chart_one({ text }) {
+function Chart_one({ text }) {
   return (
     <div className='skill' >
       <div className="outer">
@@ -22,4 +22,5 @@ export default function Chart_one({ text }) {
       </svg>
     </div>
   )
-} 
+}
+export default memo(Chart_one)

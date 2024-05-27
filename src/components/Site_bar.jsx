@@ -10,10 +10,10 @@ import { MdOutlineSms, MdOutlineSsidChart } from 'react-icons/md'
 import { PiDotsThreeCircleBold } from 'react-icons/pi'
 import { NavLink } from 'react-router-dom'
 
-export default function Site_bar() {
+export default function Site_bar({siteBar, setSiteBar}) {
   return (
-    <div className='site_bar' >
-      <button className='bars' >
+    <div className={siteBar ? 'site_bar' : 'site_bar active_site_bar'} >
+      <button className='bars' onClick={() => setSiteBar(true)} >
         <HiBars3BottomRight />
       </button>
       <ul className='hover_bg'>

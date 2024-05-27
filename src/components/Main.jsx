@@ -7,14 +7,14 @@ import { MdShowChart } from 'react-icons/md'
 import { RxCountdownTimer } from 'react-icons/rx'
 import Chart_one from './Chart_one'
 
-export default function Main() {
+export default function Main({ setSiteBar }) {
   return (
     <div>
       <nav>
-        <Navbar />
+        <Navbar setSiteBar={setSiteBar} />
       </nav>
       <header>
-        <div className='d-flex gap_20' >
+        <div className='d-flex gap_20 column' >
           <div className='line_chart' >
             <div className='flex_element' >
               <h1>Performance</h1>
@@ -30,9 +30,8 @@ export default function Main() {
             <Chart_circle />
           </div>
         </div>
-        <div className='d-flex gap_20  mt-20 ' >
+        <div className='d-flex gap_20  mt-20 section_l_r ' >
           <div className="left_box">
-
             <div className="boxer">
               <div className="box">
                 <div className="icon">
@@ -105,7 +104,6 @@ export default function Main() {
               </div>
             </div>
           </div>
-
           <div className="right_box">
             <div className="bg_white">
               <h1>Sessions By Device</h1>

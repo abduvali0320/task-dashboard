@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { memo } from 'react'
 import ReactApexChart from 'react-apexcharts';
-export default function Chart_circle() {
+function Chart_circle() {
   const state = {
     series: [75, 55, 25],
     options: {
@@ -52,3 +52,5 @@ export default function Chart_circle() {
     </div>
   );
 }
+
+export default memo(Chart_circle)

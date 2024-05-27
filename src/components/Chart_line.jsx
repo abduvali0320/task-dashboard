@@ -1,5 +1,6 @@
+import { memo } from 'react';
 import ReactApexChart from 'react-apexcharts'
-export default function Chart_line() {
+function Chart_line() {
   const state = {
     series: [{
       data: [
@@ -87,9 +88,10 @@ export default function Chart_line() {
   return (
     <div className='bg_white' >
       <div id="chart">
-        <ReactApexChart className='chart' options={state.options} series={state.series} type="line"  height={'170%'} />
+        <ReactApexChart className='chart' options={state.options} series={state.series} type="line" height={'170%'} />
       </div>
       <div id="html-dist"></div>
     </div >
   );
 }
+export default memo(Chart_line)

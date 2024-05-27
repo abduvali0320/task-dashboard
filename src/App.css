@@ -155,7 +155,7 @@ li a:active {
     width: 0;
 }
 .site_bar button {
-    padding-top: 50px;
+    margin-bottom: 50px;
     color: var(--input_color);
 }
 .site_bar ul li {
@@ -264,6 +264,7 @@ li a:active {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .boxer .box {
     width: calc(100% / 4 - 15px);
@@ -506,10 +507,9 @@ li a:active {
         stroke-dashoffset: 150;
     }
 }
-/* chart one styles */
-/* .chart {
-    height: 250px !important;
-} */
+.btn_site_bar_active {
+    display: none;
+}
 /* media */
 @media screen and (max-width: 1140px) {
     .circle_chart .bg_white {
@@ -518,11 +518,166 @@ li a:active {
     }
     .description_chart_circle {
         display: flex;
-        flex-direction: row ;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
         padding: 0 30px;
+    }
+    .boxer .box {
+        width: calc(50% - 10px);
+    }
+}
+@media screen and (max-width: 980px) {
+    .line_chart {
+        width: 100%;
+    }
+    .circle_chart {
+        width: 100%;
+        /* padding: 0; */
+    }
+    .circle_chart .bg_white {
+        flex-direction: row;
+        padding: 0;
+    }
+    .column {
+        flex-wrap: wrap;
+    }
+    .progress_circle {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .progress_circle .flex_element {
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+        padding: 30px 20px;
+    }
+    .left_box .export_box {
+        margin: 15px 0;
+    }
+    .by_device {
+        padding: 10px 20px;
+    }
+
+    .site_bar ul li {
+        padding: 7px;
+    }
+    .site_bar li a {
+        padding: 10px 15px 5px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+    .site_bar button {
+        margin-bottom: 20px;
+    }
+    .max_pad {
+        padding: 0 30px 0 90px;
+    }
+    .apexcharts-datalabel-label {
+        display: none;
+    }
+    .apexcharts-datalabel-value {
+        display: none;
+    }
+    .box_amount h2 {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .line_chart .flex_element,
+    .circle_chart .flex_element {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .line_chart .flex_element h1,
+    .circle_chart .flex_element h1 {
+        font-size: 18px;
+    }
+    nav {
+        padding: 10px 0;
+    }
+    .gap_20 {
+        gap: 10px;
+    }
+    .left_box .boxer {
+        gap: 10px;
+    }
+    .left_box .box {
+        width: calc(50% - 5px);
+    }
+    .by_device {
+        margin-top: 10px;
+    }
+    .progress_circle .flex_element:first-child {
+        margin: 0;
+    }
+    .mt-20 {
+        margin-top: 10px;
+    }
+    .by_device h1 {
+        font-size: 16px;
+    }
+    .by_device p {
+        font-size: 12px;
+    }
+    .section_l_r {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .left_box,
+    .right_box {
+        width: 100%;
+    }
+    .circle_chart .bg_white {
+        flex-direction: column;
+    }
+    .progress_circle .flex_element {
+        padding: 40px 20px;
+    }
+    .max_pad {
+        padding: 0 10px 0 70px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .chart {
+        width: 100% !important;
+    }
+    .apexcharts-yaxis {
+        display: none;
+    }
+    .chart .apexcharts-inner {
+        width: 100%;
+        transform: translate(5%, 10%) scale(1.15);
+    }
+    .site_bar {
+        left: -50%;
+        padding: 15px 0;
+        background-color: white;
+        z-index: 105;
+        transition: 0.3s ease;
+    }
+    .max_pad {
+        padding: 10px 15px;
+    }
+    nav ul {
+        gap: 5px;
+    }
+    .btn_site_bar_active {
+        display: block;
+    }
+    .active_site_bar {
+        left: 0;
+    }
+}
+@media screen and (max-width: 340px) {
+    .max_pad {
+        padding: 5px;
+    }
+    .flex_element {
+        padding: 0 15px;
     }
 }
 /* media */
