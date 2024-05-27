@@ -3,7 +3,7 @@ import './App.css';
 import Site_bar from './components/Site_bar';
 import Main from './components/Main';
 export default function App() {
-  const [siteBar, setSiteBar] = useState(false)
+  const [siteBar, setSiteBar] = useState(true)
   return (
     <div className='body' >
       <div>
